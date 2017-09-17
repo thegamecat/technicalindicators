@@ -23,7 +23,7 @@ export default class BullishPatterns extends CandlestickFinder {
         return bullishPatterns.reduce(function(state, pattern) {
             let result = pattern.hasPattern(data);
             if(result) {
-                console.log('Matched pattern ', pattern.name);
+//                console.log('Matched pattern ', pattern.name);
             }
             return state || result;
         }, false)
